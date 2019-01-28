@@ -4,6 +4,9 @@ import Main from './Main';
 import Footer from './Footer'
 import './App.css';
 import * as currentWeekNumber from 'current-week-number';
+import img1 from '../images/img1.jpg';
+import img2 from '../images/img2.jpg';
+
 
 const API = `https://jakitydzien.pl/api/?type=json&api_key=cb01cde96fa2e2ddd437656a92c2da98`
 
@@ -12,7 +15,11 @@ class App extends Component {
   state = {
     nextSunday: null,
     weekNumber: currentWeekNumber(),
-    sundayDetails: null
+    sundayDetails: null,
+    texts: {
+      open: 'Biegnij do sklepu, świat za oknem poczeka...',
+      close: 'Świat jest piękny, wyjdź na spacer z przyjacielem!'
+    }
   }
 
   getDate = (date) => {
@@ -39,12 +46,24 @@ class App extends Component {
   }
 
   render() {
+
+    const {sundayDetails, weekNumber} = this.state
+    console.log(sundayDetails, weekNumber)
+
+    if(sundayDetails && sundayDetails[`${weekNumber}`].niedziela === 'handlowa') {
+      document.body.style.backgroundImage = `url(${img1})`
+    } else if (sundayDetails && sundayDetails[`${weekNumber}`].niedziela === 'niehandlowa') {
+      document.body.style.backgroundImage = `url(${img2})`
+    }
     return (
-      <div className="App">
+      <div 
+        className="App"
+      >
         <Header nextSunday={this.state.nextSunday} />
         <Main 
           sundayDetails={this.state.sundayDetails} 
           weekNumber={this.state.weekNumber}
+          texts={this.state.texts}
         />
         <Footer />
       </div>

@@ -90,7 +90,7 @@ main {
     .bubble {
         position: fixed;
         top: 490px;
-        left: 10vw;
+        left: 20vw;
         width: 300px;
     }
 
