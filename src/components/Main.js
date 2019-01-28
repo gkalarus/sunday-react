@@ -35,12 +35,7 @@ const Main = () => {
                 est sunt pariatur ipsum sit. Commodo aliquip elit non nostrud commodo reprehenderit minim ea velit anim. Ea
                 nulla laboris officia consequat nostrud aliquip Lorem cillum. Minim in duis elit in esse proident
                 exercitation ullamco amet laborum ullamco excepteur non. Eu nostrud eu Lorem cillum irure aliqua ex
-                pariatur pariatur ullamco qui ad. Sunt voluptate minim voluptate qui esse est aliquip deserunt elit. Esse
-                nostrud ipsum sunt eiusmod.
-                Commodo proident sint velit proident adipisicing ea. Non ut officia cupidatat est. Velit reprehenderit
-                commodo id fugiat minim ipsum aliquip. Est quis in non eiusmod consequat culpa ipsum do et velit aliqua
-                enim esse. Labore ullamco do nostrud in Lorem tempor laboris dolor. Sint reprehenderit sint voluptate in
-                elit labore ut. Incididunt adipisicing laborum do est ullamco enim.
+                pariatur pariatur ullamco qui ad.
             </p>
         </main>
     )

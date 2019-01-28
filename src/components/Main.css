@@ -62,3 +62,43 @@ main {
     font-weight: 400;
     margin-top: 16px;
 }
+
+@media (min-width: 576px) {
+    .bubble {
+        width: 100%;
+    }
+    .bubble+p {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) and (min-height: 700px) {
+    main {
+        position: relative;
+    }
+
+    .circle {
+        position: fixed;
+        top: 300px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 20vw;
+        height: 20vw;
+        font-size: 2.5vw;
+        margin-top: 0;
+    }
+    .bubble {
+        position: fixed;
+        top: 490px;
+        left: 10vw;
+        width: 300px;
+    }
+
+    .bubble+p {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30%;
+        padding-bottom: 200px;
+    }
+}

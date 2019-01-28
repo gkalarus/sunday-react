@@ -45,7 +45,7 @@ header {
     align-items: center;
     justify-content: center;
     align-self: center;
-    width: 90%;
+    width: 100%;
     height: 80px;
     background-color: white;
     font-size: 20px;
@@ -56,4 +56,32 @@ header {
 .thirdBlock p {
     text-align: center;
     padding: 0 10px;
+}
+
+@media (min-width: 1200px) and (min-height: 700px) {
+    .firstBlock {
+        position: fixed;
+        top: 37px;
+        margin-top: 0;
+    }
+
+    
+    .secondBlock {
+        position: fixed;
+        top: 90px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 363px;
+        height: 75px;
+        font-size: 44px;
+        margin-top: 0;
+    }
+
+    .thirdBlock {
+        position: fixed;
+        top: 190px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+    }
 }
