@@ -14,14 +14,14 @@ const Footer = () => {
                     <img src={ico2} alt="be icon"/>
                     <img src={ico3} alt="linkedin icon"/>
                 </div>
-                <div class="desktop">
-                    <div class="desktop__year">
-                        <span class="rect"></span>2019
+                <div className="desktop">
+                    <div className="desktop__year">
+                        <span className="rect"></span>2019
                     </div>
-                    <div class="desktop__company">
+                    <div className="desktop__company">
                         <span>Wykonanie:</span> <span>Grzegorz Kalarus</span>
                     </div>
-                    <div class="desktop__icons">
+                    <div className="desktop__icons">
                         <img src={ico1} alt="facebook icon"/>
                         <img src={ico2} alt="be icon"/>
                         <img src={ico3} alt="linkedin icon"/>

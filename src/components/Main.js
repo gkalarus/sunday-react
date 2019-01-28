@@ -1,11 +1,19 @@
 import React from 'react';
 import './Main.css';
 
-const Main = () => {
+const Main = ({sundayDetails, weekNumber}) => {
+    let sunday = '';
+    if(sundayDetails && sundayDetails[`${weekNumber}`].niedziela === 'handlowa') {
+         sunday = 'otwarte'
+    } else if(sundayDetails && sundayDetails[`${weekNumber}`].niedziela === 'niehandlowa') {
+        sunday = 'zamknięte'
+    } else {
+        sunday = null
+    }
     return (
         <main className="wrapper">
             <div className="circle">
-                <p>Zamknięte</p>
+                <p>{sunday}</p>
             </div>
             <div className="bubble">
                 <p>Świat jest piękny, wyjdź na spacer z przyjacielem!</p>

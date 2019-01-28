@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 
-const Header = () => {
+const Header = ({nextSunday}) => {
     return(
         <header className="wrapper">
             <div className="firstBlock">
@@ -11,7 +11,7 @@ const Header = () => {
                 <p>Dzień dobry!</p>
             </div>
             <div className="thirdBlock">
-                <p>W najbliższą niedzielę (03.01.2019) sklepy będą:</p>
+                <p>W najbliższą niedzielę ({nextSunday}) sklepy będą:</p>
             </div>
         </header>
     )
